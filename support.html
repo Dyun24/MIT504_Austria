@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MIT 504 | Example</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-georgia.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <ul>
+          <li><a href="index.html"><span>Topic</span></a></li>
+          <li class="active"><a href="support.html"><span>Example</span></a></li>
+          <li><a href="about.html"><span>Activity</span></a></li>
+          <li><a href="blog.html"><span>Presenter</span></a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <h1><a href="index.html">MIT<span> 504</span></a></h1>
+      </div>
+      <div class="clr"></div>
+      <div class="slider">
+        <div id="coin-slider"> <img src="images/img1.png" width="960" height="360" alt="" /><span> </span></a> <a href="#"><img src="images/img2.png" width="960" height="360" alt="" /><span> </span></a> <a href="#"><img src="images/img3.png" width="960" height="360" alt="" /></span></a> </div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <h2><span>Example of</span> Apriori Algorithm</h2>
+            <div class="clr"></div>
+            <p>We will understand this algorithm with the help of an example
+            <br>Consider a Big Bazar scenario where the product set is P = {Rice, Pulse, Oil, Milk, Apple}. The database comprises six transactions where 1 represents the presence of the product and 0 represents the absence of the product.</p>
+            <div class="img"><img src="images/tab1.png" width="675" height="285" alt="" class="fl" /></div>
+            <n></n><p>The Apriori Algorithm makes the given assumptions 
+            <br>● All subsets of a frequent itemset must be frequent.
+            <br>● The subsets of an infrequent item set must be infrequent.
+            <br>● Fix a threshold support level. In our case, we have fixed it at 50 percent.</p>
+          <h3>Step 1</h3>
+            <p>Make a frequency table of all the products that appear in all the transactions. Now, short the frequency table to add only those products with a threshold support level of over 50 percent. We find the given frequency table.</p>
+            <div class="img"><img src="images/ste1.png" width="675" height="185" alt="" class="fl" /></div>
+            <p>The above table indicated the products frequently bought by the customers.</p>
+          <h3>Step 2</h3>
+            <p>Create pairs of products such as RP, RO, RM, PO, PM, OM. You will get the given frequency table.</p>
+            <div class="img"><img src="images/ste2.png" width="675" height="285" alt="" class="fl" /></div>
+            <p>...</p>
+            <h3>Step 3</h3>
+              <p>Implementing the same threshold support of 50 percent and consider the products that are more than 50 percent. In our case, it is more than 3
+              <br>Thus, we get RP, RO, PO, and PM</p>
+            <h3>Step 4</h3>
+              <p>Now, look for a set of three products that the customers buy together. We get the given combination.
+              <br>1. RP and RO give RPO
+              <br>2. PO and PM give POM</p>
+            <h3>Step 5</h3>
+                <p>Calculate the frequency of the two itemsets, and you will get the given frequency table.</p>
+                <div class="img"><img src="images/ste3.png" width="675" height="135" alt="" class="fl" /></div>
+                <p>If you implement the threshold assumption, you can figure out that the customers' set of three products is RPO.
+                <br>We have considered an easy example to discuss the apriori algorithm in data mining. In reality, you find thousands of such combinations.</p>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="clr"></div>
+        <div class="gadget">
+          <h2 class="star"><span>Sidebar</span> Menu</h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><strong><a href="index.html">Topic</strong></a></li>
+            <li><strong><a href="support.html">Example</strong></a></li>
+            <li><strong><a href="about.html">Activity</strong></a></li>
+            <li><strong><a href="blog.html">Presenter</strong></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy; <a href="#">Domain Name</a>. All Rights Reserved</p>
+      <p class="rf">Design by <a target="_blank" href="http://www.dreamtemplate.com/">DreamTemplate</a></p>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

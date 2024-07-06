@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MIT 504 | Topic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-georgia.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <ul>
+          <li class="active"><a href="index.html"><span>Topic</span></a></li>
+          <li><a href="support.html"><span>Example</span></a></li>
+          <li><a href="about.html"><span>Activity</span></a></li>
+          <li><a href="blog.html"><span>Presenter</span></a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <h1><a href="index.html">MIT<span> 504</span></a></h1>
+      </div>
+      <div class="clr"></div>
+      <div class="slider">
+        <div id="coin-slider"><img src="images/img1.png" width="960" height="360" alt="" /><span> </span></a> <a href="#"><img src="images/img2.png" width="960" height="360" alt="" /><span> </span></a> <a href="#"><img src="images/img3.png" width="960" height="360" alt="" /></span></a> </div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <h2><span>What is Apriori</span> Algorithm?</h2>
+          <div class="clr"></div>
+          <div class="img"><img src="images/apri.jpg" width="178" height="185" alt="" class="fl" /></div>
+          <div class="post_content">
+            <p>Was given by R. Agrawal and R. Srikant in 1994 for finding frequent itemsets in a dataset for Boolean Association Rule. Name of the algorithm is Apriori because it uses prior knowledge of frequent itemset properties.</p>
+            <p>To improve the efficiency of level-wise generation of frequent itemsets, an important property is used called Apriori property which helps by reducing the search space.</p>
+            <p><strong>Apriori Property</strong> – all non-empty subset of frequent itemset must be frequent. The key concept of Apriori algorithm is its anti-monotonicity of support measure.</p>
+            <p><strong> In other words, we can say that the apriori algorithm is an association rule leaning that analyzes that people who bought product A also bought product B.</strong>
+              The primary objective of this algorithm is to create the association rule between different objects. Which means it describes how two or more objects are related to one another. 
+              Apriori algorithm is also called <strong>frequent pattern mining</strong>.
+              </p>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="article">
+          <h2><span>Components of</span> Apriori Algorithm</h2>
+          <div class="clr"></div>
+          <div class="img"><img src="images/imp.jpg" width="178" height="185" alt="" class="fl" /></div>
+          <div class="post_content">
+            <p>For an instance, you have 5000 customer transactions in a Zara Store. You have to calculate the Support, Confidence, and Lift for two products, and you may say Men's Wear and Women Wears.
+            <br>Out of 5000 transactions, 300 contain Men's Wear, whereas 700 contain women's wear, and these 700 transactions include 250 transactions of both men's & women's wear.</p>
+            <h3>1. Support</h3>
+            <p>Support denotes the average popularity of any product or data item in the data set. We need to divide the total number of transactions containing that product by the total number of transactions. 
+            <br>Support (Men's wear)= (transactions relating MW) / (total transaction)
+            <br>= 300/5000
+            <br><strong>= 16.67 %</strong></p>
+            <h3>2. Confidence</h3>
+            <p>Confidence is the sum average of transactions/data items present in pairs/combinations in the universal dataset. To find out confidence, we divide the number of transactions that comprise both men's & women's wear by the total number of transactions. 
+            <br>Hence,
+            <br>Confidence = (Transactions with men's & women's wear) / (total transaction)
+            <br>= 250/5000
+            <br><strong>= 5%</strong></p>
+            <h3>3. Lift</h3>
+            <p>It helps find out the ratio of the sales of women's wear when you sell men's wear. The mathematical equation of lift is mentioned below.
+            <br>Lift = (Confidence ( Men's wear- women's wear)/ (Support (men's wear)
+            <br>= 20/18
+            <br><strong>= 1.11</strong></p>
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="clr"></div>
+        <div class="gadget">
+          <h2 class="star"><span>Sidebar</span> Menu</h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+            <li><strong><a href="index.html">Topic</strong></a></li>
+            <li><strong><a href="support.html">Example</strong></a></li>
+            <li><strong><a href="about.html">Activity</strong></a></li>
+            <li><strong><a href="blog.html">Presenter</strong></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content_resize">
+          <div class="mainbar">
+            <div class="article">
+              <h2><span>Steps of Apriori </span>Algorithm</h2>
+              <div class="clr"></div>
+              <p><strong>The following are the main steps of the apriori algorithm in data mining:</strong>
+              <br>1. Set the minimum support threshold - min frequency required for an itemset to be "frequent".
+              <br>2. Identify frequent individual items - count the occurence of each individual item.
+              <br>3. Generate candidate itemsets of size 2 - create pairs of frequent items discovered.
+              <br>4. Prune infrequent itemsets - eliminate itemsets that do no meet the threshold levels.
+              <br>5. Generate itemsets of larger sizes - combine the frequent itemsets of size 3,4, and so on.
+              <br>6. Repeat the pruning process - keep eliminating the itemsets that do not meet the threshold levels.
+              <br>7. Iterate till no more frequent itemsets can be generated.
+              <br>8. Generate association rules that express the relationship between them - calculate measures to evaluate the strength & significance of these rules.</p>
+              <h2><span>Advantages of </span>Apriori Algorithm</h2>
+              <p>● It is used to calculate large itemsets.
+              <br>● Simple to understand and apply.</p>
+              <h2><span>Disadvantages of </span>Apriori Algorithm</h2>
+              <p>● Apriori algorithm is an expensive method to find support since the calculation has to pass through the whole database.
+              <br>● Sometimes, you need a huge number of candidate rules, so it becomes computationally more expensive.</p>
+              <h3>References</h3>
+              <p>● Apriori algorithm - Javatpoint. (n.d.). www.javatpoint.com. https://www.javatpoint.com/apriori-algorithm
+                <br>● GeeksforGeeks. (2022, January 13). Apriori algorithm. GeeksforGeeks. https://www.geeksforgeeks.org/apriori-algorithm/
+                <br>● Banoula, M. (2023, February 21). What is apriori algorithm in data mining: Everything you need to know. Simplilearn.com. https://www.simplilearn.com/tutorials/machine-learning-tutorial/apriori-algorithm-in-data-mining
+                <br>● Wikipedia contributors. (2024, February 27). Apriori algorithm. Wikipedia. https://en.wikipedia.org/wiki/Apriori_algorithm
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="clr"></div>
+        <div class="gadget">
+          <div class="clr"></div>
+          <div class="img"><img src="images/apri.jpg" width="178" height="185" alt="" class="fl" /></div>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy; <a href="#">MIT 504</a>. All Rights Reserved</p>
+      <p class="rf">Design by DreamTemplate</a></p>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
